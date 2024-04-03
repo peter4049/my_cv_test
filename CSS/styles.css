@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -9,17 +10,16 @@ header {
 
 header nav ul {
     display: flex;
-    margin-left: 70%;
+    justify-content: flex-end;
     list-style: none;
 }
 
 header nav ul li {
-    padding-left: 10%;
+    padding-left: 10px;
 }
 
 header a {
     color: blueviolet;
-
 }
 
 .cont1 {
@@ -35,14 +35,6 @@ header a {
     display: flex;
     justify-content: space-between;
 }
-
-/* section {
-    height: 100vh;
-    border: 1px solid grey;
-    display: grid;
-    justify-content: left;
-    align-items: center;
-} */
 
 h1 {
     margin-top: 2%;
@@ -70,10 +62,6 @@ footer {
     display: grid;
     justify-content: left;
     align-items: center;
-}
-
-.pic {
-    border-radius: 50%;
 }
 
 #Project {
@@ -105,4 +93,32 @@ footer {
     justify-content: space-evenly;
     padding: 20px;
     color: red;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header nav ul li {
+        padding-left: 5px;
+    }
+
+    .text {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li {
+        padding-left: 2px;
+    }
+
+    .text {
+        padding-left: 5px;
+    }
 }
